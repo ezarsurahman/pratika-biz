@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono, Jockey_One, JetBrains_Mono } from "next/font/google";
 import "./globals.css"
+import "./locomotive-scroll.css"
 import Navigation from "@/components/elements/layout/Navigation";
 import Layout from "@/components/elements/layout/index"
 import { cn } from "@/lib/utils";
@@ -23,7 +24,7 @@ const jockeyOne = Jockey_One({
 const JetBrainsMono = JetBrains_Mono({
   variable: "--font-jetbrains-mono",
   subsets: ["latin"],
-  weight: ["400"]
+  weight: ["400","800"]
 })
 
 export const metadata: Metadata = {
