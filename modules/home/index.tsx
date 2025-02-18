@@ -1,12 +1,14 @@
 "use client"
 import useEmblaCarousel from 'embla-carousel-react'
 import Autoplay from 'embla-carousel-autoplay'
+import AnimationOnScroll from '@/components/AnimationOnScroll'
 
 
 export const Home = () => {
 
     return (
         <div className=''>
+            <AnimationOnScroll classNameInView="opacity-100 transition-opacity duration-500" classNameNotInView="opacity-0">
             <div className="min-h-screen relative overflow-hidden" id="hero">
                 <img src="blur-home.png" alt="" className="z-30 right-0 absolute h-full rounded-b-4xl"/>
                 <img src="home-bg.png" className="z-10 absolute h-full rounded-b-4xl object-cover" alt="" />
@@ -33,6 +35,8 @@ export const Home = () => {
                     </p>
                 </div>
             </div>
+            </AnimationOnScroll>
+            <AnimationOnScroll classNameInView="opacity-100 transition-opacity duration-500" classNameNotInView="opacity-0">
             <div className="h-screen flex flex-col justify-center items-center">
                 <p className="font-jockey-one text-8xl text-center text-shadow-lg mb-8">What We Provide</p>
                 <img src="home-provide/wave.png" alt="" className="absolute z-0"/>
@@ -43,6 +47,8 @@ export const Home = () => {
                     <ProvideContainer src="home-provide/bucket.png" text="ELECTRO DEEP PAINTING" classname=""></ProvideContainer>
                 </div>
             </div>
+            </AnimationOnScroll>
+            <AnimationOnScroll classNameInView="opacity-100 transition-opacity duration-500" classNameNotInView="opacity-0">
             <div className="bg-[#2A9BDD] rounded-t-4xl flex justify-center items-center relative overflow-hidden">
                 <img src="home-bottom/blobs/white-1.png" className='absolute -top-44' alt="" />
                 <img src="home-bottom/blobs/white-2.png" className='absolute right-0 -top-36' alt="" />
@@ -51,6 +57,7 @@ export const Home = () => {
                 <img src="home-bottom/blobs/black-2.png" className='absolute right-0 -bottom-36' alt="" />
                 <Carousel></Carousel>
             </div>
+            </AnimationOnScroll>
         </div>
         
     )
