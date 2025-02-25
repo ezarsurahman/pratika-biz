@@ -14,6 +14,9 @@ export default {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      dropShadow: {
+        "lg-yellow" : "0 20px 15px rgba(255, 237, 101, 1)"
+      },
       borderRadius: {
         "4xl" : "3.5rem"
       },
