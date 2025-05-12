@@ -22,7 +22,7 @@ const Navigation = () => {
                         <p className="font-jetbrains-mono">Products</p>
                     </Link>
                     <Link href={"/client-services"}>
-                        <p className="font-jetbrains-mono">Our Clients</p>
+                        <p className="font-jetbrains-mono">Clients and Services</p>
                     </Link>
                 </div>
             </div>

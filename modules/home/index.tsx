@@ -41,10 +41,10 @@ export const Home = () => {
                 <p className="font-jockey-one text-8xl text-center text-shadow-lg mb-8">What We Provide</p>
                 <img src="home-provide/wave.png" alt="" className="absolute z-0"/>
                 <div className="flex flex-row mx-32 my-10 gap-10">
-                    <ProvideContainer src="home-provide/gear.png" text="MANUFACTURING" classname="z-0"></ProvideContainer>
-                    <ProvideContainer src="home-provide/hat.png" text="CONSTRUCTION" classname=""></ProvideContainer>
-                    <ProvideContainer src="home-provide/parabole.png" text="TELECOMMUNICATION" classname="z-0"></ProvideContainer>
-                    <ProvideContainer src="home-provide/bucket.png" text="ELECTRO DEEP PAINTING" classname=""></ProvideContainer>
+                    <ProvideContainer src="home-provide/gear.png" text="PIPING/TUBING" classname="z-0"></ProvideContainer>
+                    <ProvideContainer src="home-provide/hat.png" text="METAL STAMPING" classname=""></ProvideContainer>
+                    <ProvideContainer src="home-provide/parabole.png" text="MACHINING" classname="z-0"></ProvideContainer>
+                    <ProvideContainer src="home-provide/bucket.png" text="ASSEMBLY" classname=""></ProvideContainer>
                 </div>
             </div>
             </AnimationOnScroll>
