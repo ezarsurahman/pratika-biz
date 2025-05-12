@@ -9,20 +9,20 @@ const Navigation = () => {
                     <p className="font-jockey-one text-[#2A9BDD] text-2xl ml-2">PRATIKA</p>
                 </div>
                 <div className="flex flex-row items-center justify-center gap-6 text-[#2A9BDD] font-jetbrains-mono">
-                    <Link href={"#"}>
+                    <Link href={"/"}>
                         <p className="font-jetbrains-mono">Home</p>
                     </Link>
-                    <Link href={"#"}>
+                    <Link href={"/about"}>
                         <p className="font-jetbrains-mono">About Us</p>
                     </Link>
-                    <Link href={"#"}>
+                    <Link href={"/certificates"}>
                         <p className="font-jetbrains-mono">Certificates</p>
                     </Link>
                     <Link href={"#"}>
                         <p className="font-jetbrains-mono">Products</p>
                     </Link>
-                    <Link href={"#"}>
-                        <p className="font-jetbrains-mono">Our Clients</p>
+                    <Link href={"/client-services"}>
+                        <p className="font-jetbrains-mono">Clients and Services</p>
                     </Link>
                 </div>
             </div>
