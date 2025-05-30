@@ -2,7 +2,6 @@
 import Link from "next/link"
 import { NavLinks } from "./constant"
 import Image from "next/image"
-import { MobileNav } from "./MobileNav"
 import { Menu } from "lucide-react"
 import { useEffect, useState } from "react"
 const Navigation = () => {
@@ -43,7 +42,7 @@ const Navigation = () => {
                 </button>
             </div>
         </nav>
-        <div className={`${isOpen? " opacity-100" : " opacity-0"} flex flex-col items-center justify-center gap-3 transition-opacity duration-300 ease-in-out fixed top-0 left-0 right-0 md:hidden bg-white w-[100dvw] font-jetbrains-mono pb-[13px] pt-[73px]`}>
+        <div className={`${isOpen? " opacity-100" : " opacity-0"} flex flex-col items-center justify-center gap-3 transition-opacity duration-300 ease-in-out fixed top-0 left-0 right-0 md:hidden bg-white w-[100dvw] font-jetbrains-mono pb-[13px] pt-[73px] z-[998]`}>
                 {NavLinks.map((item,i) => (
                     <Link 
                     href={item.href}

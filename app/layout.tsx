@@ -1,19 +1,9 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, Jockey_One, JetBrains_Mono } from "next/font/google";
+import { Jockey_One, JetBrains_Mono } from "next/font/google";
 import "./globals.css"
 import "./locomotive-scroll.css"
-import Navigation from "@/components/elements/layout/Navigation";
 import Layout from "@/components/elements/layout/index"
 import { cn } from "@/lib/utils";
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
 
 const jockeyOne = Jockey_One({
   variable: "--font-jockey-one",
