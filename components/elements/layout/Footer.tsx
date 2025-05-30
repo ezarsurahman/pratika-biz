@@ -35,21 +35,37 @@ const Footer = () => {
                         </form>
 
                     </div>
-                    <div className="flex flex-col gap-[21px] mx-4 text-white text-justify  justify-center md:text-[20px] text-[13px]">
+                    <div className="flex flex-col gap-[21px] mx-2 text-white text-justify  justify-center md:text-[20px] text-[13px]">
                         <div className="flex flex-row items-center gap-5">
-                            <img src="building.png" alt="" />
-                            <p className="font-jetbrains-mono">
+                            <Image 
+                                height={24}
+                                width={24}
+                                src={"/building.png"}
+                                alt=""
+                                className="min-h-[24px] min-w-[24px] flex-shrink-0"
+                            />
+                            <p className="font-jetbrains-mono flex-1">
                             Jl. Beringin, No. 71, Kel. Leuwinanggung, Kec. Tapos, Depok, Jawa Barat, Indonesia 16456
                             </p>
                         </div>
                         <div className="flex flex-row items-center gap-5">
-                            <img src="phone.png" alt="" />
+                            <Image 
+                                height={24}
+                                width={24}
+                                src={"/phone.png"}
+                                alt=""
+                            />
                             <p className="font-jetbrains-mono">
                             (021) 22177288
                             </p>
                         </div>
                         <div className="flex flex-row items-center gap-5">
-                            <img src="mail.png" alt="" />
+                            <Image 
+                                height={24}
+                                width={24}
+                                src={"/mail.png"}
+                                alt=""
+                            />
                             <p className="font-jetbrains-mono">
                             admin@pratika.biz
                             </p>
