@@ -12,7 +12,7 @@ export const ProvideContainer = ({src, text="",classname=""}:ProvideContainerInt
                 <Image height={345} width={260} src={'/'+src} alt="" className={`h-[90px] w-[68px] md:h-[345px] md:w-[260px] object-cover rounded-[10px]`}/>
                 <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-50 transition-all duration-300 rounded-[10px]" />
                 <div className="absolute inset-0 flex items-center justify-center">
-                    <p className="font-jockey-one text-white md:text-[50px] text-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 px-2 z-10 text-wrap leading-none tes">
+                    <p className="font-jockey-one text-white md:text-[50px] text-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 px-2 z-10 text-wrap leading-none">
                         {text}
                     </p>
                 </div>
