@@ -6,8 +6,15 @@ import { Menu } from "lucide-react"
 import { useEffect, useState } from "react"
 const Navigation = () => {
     const [isOpen, setIsOpen] = useState<boolean>(false)
+    const [hidden,setHidden] = useState<string>("hidden")
     useEffect(() => {
-        console.log(isOpen)
+        var temp : string
+        if(!isOpen && hidden==="") {
+            let timeout = setTimeout(()=> setHidden("hidden"),300)
+            return () => clearTimeout(timeout)
+        } else if (isOpen && hidden==="hidden"){
+            setHidden("")
+        }
     },[isOpen])
     return (
         <>
@@ -42,11 +49,12 @@ const Navigation = () => {
                 </button>
             </div>
         </nav>
-        <div className={`${isOpen? " opacity-100" : " opacity-0"} flex flex-col items-center justify-center gap-3 transition-opacity duration-300 ease-in-out fixed top-0 left-0 right-0 md:hidden bg-white w-[100dvw] font-jetbrains-mono pb-[13px] pt-[73px] z-[998]`}>
+        <div className={`${isOpen? " opacity-100" : " opacity-0"} flex flex-col items-center justify-center gap-3 transition-opacity duration-300 ease-in-out fixed top-0 left-0 right-0 md:hidden bg-white w-[100dvw] font-jetbrains-mono pb-[13px] pt-[73px] z-[998] ${hidden}`}>
                 {NavLinks.map((item,i) => (
                     <Link 
                     href={item.href}
                     key={i}
+                    onClick={() => setIsOpen(!isOpen)}
                 >
                     <p className="font-jetbrains-mono md:text-[10px] lg:text-[25px] hover:font-bold hover:underline text-[#2A9BDD]">{item.title}</p>
                 </Link>
