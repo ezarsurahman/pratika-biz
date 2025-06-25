@@ -31,6 +31,7 @@ export default {
       },
       textShadow: {
         sm: '0 1px 1px var(--tw-shadow-color)', // More concentrated small shadow
+        smClose: '0px 4px 0.5px var(--tw-shadow-color), 2px 3px 3px var(--tw-shadow-color)', // More concentrated small shadow
         default: '0 2px 2px var(--tw-shadow-color)', // More concentrated default shadow
         lg: '0 4px 4px var(--tw-shadow-color)', // More concentrated large shadow
       },
