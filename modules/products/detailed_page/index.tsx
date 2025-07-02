@@ -3,11 +3,11 @@ import { notFound } from "next/navigation";
 import ProductDetailClient from "@/modules/products/detailed_page/client";
 
 interface ProductDetailProps {
-  params: { id: string };
+  params: { id: string};
 }
 
-export default async function ProductDetailPage({ params }: ProductDetailProps) {
-  const { id } = await params;
+export default function ProductDetailPage({ params }: ProductDetailProps) {
+  const { id } =  params;
   const product = items.find((item) => item.id === id);
   
   if (!product) return notFound();

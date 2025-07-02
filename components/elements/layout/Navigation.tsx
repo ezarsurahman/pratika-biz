@@ -14,14 +14,13 @@ const Navigation = () => {
     }, [])
 
     useEffect(() => {
-        var temp : string
         if(!isOpen && hidden==="") {
-            let timeout = setTimeout(()=> setHidden("hidden"),300)
+            const timeout = setTimeout(()=> setHidden("hidden"),300)
             return () => clearTimeout(timeout)
         } else if (isOpen && hidden==="hidden"){
             setHidden("")
         }
-    },[isOpen])
+    },[isOpen,hidden])
 
 
 
