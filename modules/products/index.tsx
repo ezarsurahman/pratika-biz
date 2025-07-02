@@ -35,7 +35,7 @@ export const ProductModule = () => {
     <div className=""> 
     <AnimationOnScroll classNameInView="opacity-100 transition-opacity duration-500" classNameNotInView="opacity-0">
             <div className="md:min-h-screen md:h-screen relative overflow-hidden rounded-b-4xl" id="hero">
-                {/* Background Image */}
+              
                 <Image 
                     src={"/blur-product.png"}
                     alt='blur image'
@@ -44,7 +44,7 @@ export const ProductModule = () => {
                     height={1080}
                     priority
                 />
-                {/* Gradient Overlay */}
+                
                 <div className="absolute inset-0 z-20 bg-gradient-to-br from-[#2A9BDD]/90 via-[#2A9BDD]/60 to-transparent rounded-b-4xl" />
 
                 <div className="absolute top-0 left-0 z-30 flex flex-col items-start justify-start h-full w-full md:p-16 p-5">
@@ -63,7 +63,7 @@ export const ProductModule = () => {
                 </div>
             </div>
             <div className="container mx-auto py-8 px-4 min-h-screen">
-                {/* Tabs */}
+                
                 <div className="flex gap-4 justify-center mb-6">
                   {CATEGORIES.map((cat) => (
                     <button
@@ -76,7 +76,7 @@ export const ProductModule = () => {
                   ))}
                 </div>
                 
-                {/* Search */}
+              
                 <div className="flex justify-center mb-4">
                   <div className="relative w-full max-w-md">
                     <input
