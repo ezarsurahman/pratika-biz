@@ -7,6 +7,7 @@ import { items } from "@/data/items";
 import { useState, useMemo } from "react";
 
 const CATEGORIES = [
+  "All",
   "Piping and Tubing",
   "Metal Stamping",
   "Metal Machining",
@@ -17,15 +18,16 @@ export const ProductModule = () => {
   const [category, setCategory] = useState(CATEGORIES[0]);
   const [search, setSearch] = useState("");
   const [page, setPage] = useState(1);
-  const PER_PAGE = 9;
+  const PER_PAGE = 12;
 
   const filtered = useMemo(() => {
     return items.filter(
       (item) =>
-        item.category === category &&
+        (category === "All" || item.category === category) &&
         item.name.toLowerCase().includes(search.toLowerCase())
     );
   }, [category, search]);
+
 
   const total = filtered.length;
   const totalPages = Math.ceil(total / PER_PAGE);
