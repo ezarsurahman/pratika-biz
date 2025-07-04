@@ -15,15 +15,15 @@ export const Home = () => {
                 <Image 
                     src={"/blur-home.png"}
                     alt='blur image'
-                    className='z-30 right-0 absolute h-full rounded-b-4xl'
+                    className='z-30 right-0 absolute h-full rounded-b-3xl md:rounded-b-3xl md:rounded-b-4xl'
                     width={1920}
                     height={1080}
                 />
-                <div className="absolute inset-0 z-20 bg-gradient-to-t from-[#2A9BDD] to-transparent rounded-b-4xl" />
+                <div className="absolute inset-0 z-20 bg-gradient-to-t from-[#2A9BDD] to-transparent rounded-b-3xl md:rounded-b-4xl" />
                 <Image 
                     src={"/home-bg.jpg"}
                     alt='Home hero background'
-                    className='z-10 absolute h-full w-full rounded-b-4xl object-cover'
+                    className='z-10 absolute h-full w-full rounded-b-3xl md:rounded-b-4xl object-cover'
                     width={1920}
                     height={1080}
                 />
@@ -41,7 +41,7 @@ export const Home = () => {
                         <ProductImage></ProductImage>
                     </div>
                 </div>
-                <div className="md:min-h-screen min-h-[75dvw] flex flex-col relative justify-end items-end rounded-b-4xl z-[900] mt-3 md:p-16 p-5">
+                <div className="md:min-h-screen min-h-[75dvw] flex flex-col relative justify-end items-end rounded-b-3xl md:rounded-b-4xl z-[900] mt-3 md:p-16 p-5">
                     <span className="font-jockey-one text-white text-[31px] md:text-8xl inline-block text-shadow-lg z-[901]">
                         “Quality You <br />Can Rely On”
                     </span>
