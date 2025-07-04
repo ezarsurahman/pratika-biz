@@ -10,7 +10,6 @@ interface ProductDetailClientProps {
 export default function ProductDetailClient({ product }: ProductDetailClientProps) {
   const [currentPhotoIndex, setCurrentPhotoIndex] = useState(0);
   
-  // Ensure photos is always an array
   const photos = Array.isArray(product.photo) ? product.photo : [product.photo];
   const totalPhotos = photos.length;
   const currentPhoto = photos[currentPhotoIndex];
@@ -35,7 +34,7 @@ export default function ProductDetailClient({ product }: ProductDetailClientProp
           <div className="bg-white border-2 border-[#B6B6B6] rounded-[20px] p-4 w-full max-w-[420px] flex flex-col items-center relative">
             <Image src={currentPhoto} alt={product.name} width={400} height={400} className="object-contain w-full h-[340px]" />
             
-            {/* Navigation arrows - only show if more than 1 photo */}
+            
             {totalPhotos > 1 && (
               <>
                 <button
@@ -54,7 +53,7 @@ export default function ProductDetailClient({ product }: ProductDetailClientProp
             )}
           </div>
       
-          {/* Photo indicators */}
+          
           <div className="flex justify-center gap-2 mt-4">
             {photos.map((_, i) => (
               <button
