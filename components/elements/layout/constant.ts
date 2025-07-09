@@ -19,10 +19,6 @@ export const NavLinks : {
             href: "/products"
         },
         {
-            title:"Facilities",
-            href: "/facilities"
-        },
-        {
             title:"Our Clients",
             href: "/client-services"
         },
