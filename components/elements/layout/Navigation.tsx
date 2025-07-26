@@ -9,7 +9,7 @@ const Navigation = () => {
     const [isOpen, setIsOpen] = useState<boolean>(false)
     const [hidden,setHidden] = useState<string>("hidden")
 
-        useEffect(() => {
+    useEffect(() => {
         setMounted(true)
     }, [])
 

@@ -171,7 +171,10 @@ export default {
         }
       },
       dropShadow: {
-        "lg-yellow" : "0 20px 15px rgba(255, 237, 101, 1)"
+        "lg-yellow" : "0 20px 15px rgba(255, 237, 101, 1)",
+      },
+      boxShadow: {
+        'inner-custom': 'inset 0 0 4px 4px var(--tw-shadow-color)',
       },
       borderRadius: {
         "4xl" : "3.5rem"
@@ -220,23 +223,23 @@ export default {
         { values: theme('left') }
       );
     }),
-        plugin(function({ addComponents, theme }) {
-    const textStyles = theme('textStyles')
-    
-    if (!textStyles) return
+    plugin(function({ addComponents, theme }) {
+      const textStyles = theme('textStyles')
+      
+      if (!textStyles) return
 
-    const styles = Object.entries(textStyles).reduce((acc, [key, value]) => {
-      return {
-        ...acc,
-        [`.text-style-${key}`]: value.default,
-        '@screen md': {
-          [`.text-style-${key}`]: value.md
+      const styles = Object.entries(textStyles).reduce((acc, [key, value]) => {
+        return {
+          ...acc,
+          [`.text-style-${key}`]: value.default,
+          '@media (min-width: 768px)': {  // Explicitly define the md breakpoint
+            [`.text-style-${key}`]: value.md
+          }
         }
-      }
-    }, {})
+      }, {})
 
-    addComponents(styles)
-  }),
+      addComponents(styles)
+    }),
 
   ],
 } satisfies Config;
