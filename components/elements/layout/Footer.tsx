@@ -1,4 +1,5 @@
 import Image from "next/image"
+import Link from "next/link"
 
 const Footer = () => {
     return (
@@ -25,14 +26,11 @@ const Footer = () => {
                     </div>
                     <div className="flex flex-col items-center justify-center gap-2 md:border-r border-t border-b md:border-t-0 md:border-b-0 py-3 md:py-0 md:text-[20px] text-[13px]">
                         <p className="font-jetbrains-mono text-white">Bergabung dengan kami!</p>
-                        <form action="" className="bg-[#FFED65] rounded-full py-1 px-3 font-jetbrains-mono flex">
-                            <input type="text" placeholder="Email Address" className="bg-[#FFED65]" />
-                            <button className=" flex justify-center items-center bg-black rounded-full">
-                                <svg className="w-6 h-6 text-white " aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
-                                    <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 12H5m14 0-4 4m4-4-4-4"/>
-                                </svg>
-                            </button>
-                        </form>
+                        <Link 
+                            href={"mailto:admin@pratika.biz"}
+                            className="bg-[#FFED65] hover:bg-[#b9ab48] rounded-full py-1 px-3 font-jetbrains-mono flex">
+                            <p>Hubungi via email</p>
+                        </Link>
 
                     </div>
                     <div className="flex flex-col gap-[21px] mx-2 text-white text-justify  justify-center md:text-[20px] text-[13px]">
