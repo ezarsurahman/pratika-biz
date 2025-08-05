@@ -31,7 +31,7 @@ const Footer = () => {
                             className="bg-[#FFED65] hover:bg-[#b9ab48] rounded-full py-1 px-3 font-jetbrains-mono flex">
                             <p>Hubungi via email</p>
                         </Link>
-
+                    {/* tes */}
                     </div>
                     <div className="flex flex-col gap-[21px] mx-2 text-white text-justify  justify-center md:text-[20px] text-[13px]">
                         <div className="flex flex-row items-center gap-5">
