@@ -9,7 +9,6 @@ interface ItemContainerProps {
 }
 
 export const ItemContainer = ({ src, text = "", className = "", id }: ItemContainerProps & { id: string }) => {
-    // Get first photo if array, otherwise use the string
     const photoSrc = Array.isArray(src) ? src[0] : src;
     
     return (

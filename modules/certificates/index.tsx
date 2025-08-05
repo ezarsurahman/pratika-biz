@@ -82,7 +82,7 @@ const CertificateCard = ({ certificate }: CertificateCardProps) => {
 
 export const CertificateModule = () => {
   return (
-    <div className="container mx-auto py-8 px-4">
+    <div className="container mx-auto py-8 px-4 my-8">
       <h1 className="text-3xl font-jockey-one text-center mt-10 mb-8">Our Certificates</h1>
       
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
